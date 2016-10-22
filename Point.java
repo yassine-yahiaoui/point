@@ -15,15 +15,15 @@ public class Point {
         this.abscisse=x;
         this.ordonnee=y;
     }
-    int abscisse(){
+  public  int abscisse(){
         return this.abscisse;
     }
-    int ordonnee(){
+   public  int ordonnee(){
         return this.ordonnee;
     }
-    Point symetrie(){
-        Point p=new Point(-this.abscisse,this.ordonnee);
-        return p;
+   public Point symetrie(){
+        //Point p=new Point(-this.abscisse,this.ordonnee); tu as crée une variable locale
+        return new Point(-this.abscisse,this.ordonnee);;
     
     }
     
